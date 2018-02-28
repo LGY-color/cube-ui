@@ -57,6 +57,8 @@
     padding-top: 70px
     box-sizing: border-box
     transition: all 250ms ease
+    background: url("./cube.png") no-repeat fixed 520px -31px
+    background-size: 1515px 696px
     .router-view
       height: 100%
   .navigator

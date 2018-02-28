@@ -1,16 +1,15 @@
 <template>
   <div class="home-index">
-    <h2>
-      <img src="//static.galileo.xiaojukeji.com/static/tms/shield/z/mofang/mofang/images/mofang_logo.png">
-      <p>cube-ui</p>
-    </h2>
-    <p>
-      <slot name="desc"></slot>
-    </p>
-    <div class="ghbtns">
-      <a href="https://github.com/didi/cube-ui"><img src="https://img.shields.io/github/stars/didi/cube-ui.svg?style=social&label=Star"></a>
-      <a href="https://github.com/didi/cube-ui"><img src="https://img.shields.io/github/forks/didi/cube-ui.svg?style=social&label=Fork"></a>
-      <a href="https://github.com/didi/cube-ui"><img src="https://img.shields.io/github/watchers/wepyjs/wepy.svg?style=social&label=Watch"></a>
+    <div class="banner">
+      <h2>cube-ui</h2>
+      <p>
+        <slot name="desc"></slot>
+      </p>
+      <div class="ghbtns">
+        <a href="https://github.com/didi/cube-ui"><img src="https://img.shields.io/github/stars/didi/cube-ui.svg?style=social&label=Star"></a>
+        <a href="https://github.com/didi/cube-ui"><img src="https://img.shields.io/github/forks/didi/cube-ui.svg?style=social&label=Fork"></a>
+        <a href="https://github.com/didi/cube-ui"><img src="https://img.shields.io/github/watchers/wepyjs/wepy.svg?style=social&label=Watch"></a>
+      </div>
     </div>
     <section class="features">
 <!--       <h3>Features</h3> -->
@@ -36,14 +35,13 @@
     box-sizing: border-box
     overflow: hidden
     text-align: center
-    background: url("//webapp.didistatic.com/static/webapp/shield/cube-ui-home-index-background.png") no-repeat fixed center
     background-size: cover
-    > h2
+    > .banner
       margin: 80px 0 20px
-      font-size: 30px
       @media screen and (max-width: 960px)
         margin: 50px 0 10px
-      p
+      h2
+        font-size: 30px
         margin-top: 30px
     > p
       margin: 20px 0
